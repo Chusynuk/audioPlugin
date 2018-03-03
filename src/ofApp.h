@@ -26,8 +26,11 @@ class ofApp : public ofBaseApp{
         void audioOut(float * input, int bufferSize, int nChannels);
     
         ofSoundStream soundStream;
-        int bufferSize, sampleRate;
+        int bufferSize, sampleRate, frequency;
+    double outputs[2];
     
     ofxMaxiOsc myOsc;
+    maxiEnv envelope;
+    int trigger;
    
 };
